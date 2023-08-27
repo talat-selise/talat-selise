@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Self Practise Electrolux</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Top head start -->
+            <div class="bg-blue border-bottom py-2">
+                <div class="">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile"> </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+                        <span class="me-3 "><i class="me-1"></i><a class="call" href="tel:123-456-7890">123-456-7890</a></span>
+                        <select  class="me-3 border-0 lang-value">
+                            <option value="en-us">FR</option>
+                            <option value="en-us">IT</option>
+                        </select>
+                        <span class="me-3"><i class="me-1"></i><a class="store" href="#">store locator</a></span>
+                        <span class="me-3"><i class="me-2"></i><a class="register" href="#">Register</a></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Top head start -->
+
+            <!-- Navbar Start-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="main-head">
+                <div class="nav-logo">
+                    <a href="#" class="nav-logo-white"><img src="./assets/images/Electrolux-logo-desktop-blue.png"></a>
+                </div>
+                <div class="d-flex justify-content-between nav-width">
+                    <div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#">Produkte</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Ersatzteile & Zubehör Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produktberatung</a>
+                              </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#">Entdecken</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Entdecken</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reparatur & Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="search_script()" class="border-0"><img src="./assets/images/search.svg" alt=""></button>
+            </nav>
+            <div class="input-group rounded" id="search-box">
+                <input type="search" class="form-control rounded input-width" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <!-- Navbar End -->
+        </header>
+
+          <!-- Sidebar start -->
+        <section class="sidebar-wraper">
+          <button class="btn btn-primary sidebar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Your Opinion</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Sidebar start -->
+
+        <!-- Hero Slider start -->
+        <section>
+          <div class="container">
+            <div class="slider__container">
+                <img src="./assets/images/slider2.webp" class="slide active">
+                <img src="./assets/images/bboc_bild-website_1758x658.avif" class="slide">
+                <img src="./assets/images/slider3.avif" class="slide">
+            </div>
+            <div class="head-text">
+              <h1 class="slider-title">Electrolux setzt sich stark für den Schutz unserer Gewässer ein</h1>
+              <button class="btn slider-btn"> Weiterlesen</button>
+            </div>
+            <div class="progress">
+                <div id="length"></div>
+                <div id="progress__animation"></div>
+                <div class="slider__count">
+                    <div class="count"><a href="#"></a></div>
+                    <div class="count"></div>
+                    <div class="count"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Hero slider End -->
+
+        <!-- Gallery Start -->
+        <section> 
+          <div class="product-category">
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/kochen_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/kuhlen_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/softwater_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/cleaning_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/electrolux-homecare-918x600.avif"><span>Kochen</span></div>
+            </a>
+          </div>
+        </section>
+        <!-- Gallery End -->
+
+
+        <!-- Product Innovations tabs start -->
+        <Seciton  class="bg-change">
+          <h2 class="innovation-title">Unsere neusten Produktinnovationen</h2>
+          <div class="tabs text-center">
+            <!-- Tab 1 -->
+            <input class="tab-input" type="radio" name="tab-ex" id="tab-1" checked />
+            <label for="tab-1" class="tab-label">Kochen</label>
+            <div class="tab-content">
+              <h3>ComboFlex</h3>
+              <p>Das Induktionskochfeld mit integriertem Dunstabzug</p>
+              <a href="#" class="d-flex align-items-center justify-content-center">Weiterlesen</a>
+            </div>
+            <div class="img img-1">
+              <img src="./assets/images/comboflex_2880x1200.avif" alt="image" />
+            </div>
+    
+            <!-- Tab 2 -->
+            <input class="tab-input" type="radio" name="tab-ex" id="tab-2" />
+            <label for="tab-2" class="tab-label">Wäschepflege</label>
+            <div class="tab-content">
+              <h3 class="center">UniversalDose</h3>
+              <p>Die erste für PODs® entwickelte Waschmittelschublade.</p>
+              <a href="#" class="d-flex align-items-center justify-content-center">Weiterlesen</a>
+            </div>
+            <div class="img img-2">
+              <img src="./assets/images/universaldose_2880x1200.avif" alt="" />
+            </div>
+    
+            <!-- Tab 3 -->
+            <input class="tab-input" type="radio" name="tab-ex" id="tab-3"  />
+            <label for="tab-3" class="tab-label">Bodenpflege</label>
+            <div class="tab-content">
+              <h3>Electrolux 800 Kabellose Staubsauger</h3>
+              <p>Leistung trifft auf Vielseitigkeit. Für eine neue Dimension von Sauberkeit.</p>
+              <a href="#" class="d-flex align-items-center justify-content-center">Weiterlesen</a>
+            </div>
+            <div class="img img-3">
+              <img src="./assets/images/electrolux800_2880x1200.avif" alt="" />
+            </div>
+          </div>
+        </Seciton>
+        <!-- Product Innovations End -->
+
+        <!-- highlights start -->
+        <section class="hightlights-wrap">
+          <h2 class="highlights-title">Highlights</h2>
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="card bg-dark text-white img-transition">
+               <img src="./assets/images/weinschrank-flaschen_1440x1080.avif" class="card-img" alt="...">
+                <div class="card-img-overlay d-flex justify-content-end align-items-center flex-nowrap flex-column">
+                  <h5 class="card-title display-6 fw-bolder">Optimale Weinlagerung</h5>
+                  <p class="card-text">Electrolux Weinschränke schützen die Qualität Ihrer Weine.</p>
+                  <a href="#" class="d-flex align-items-center justify-content-center">Weiterlesen</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-highlight overflow-hidden">
+              <div class="card bg-dark text-white h-100 mw-100 img-transition">
+                <img src="./assets/images/ecoline-waschmaschine_2880x1390.avif" class="card-img h-100 w-100" alt="...">
+                <div class="card-img-overlay d-flex justify-content-end align-items-center flex-nowrap flex-column">
+                  <img src="./assets/images/flower.png" alt="flower icon">
+                  <h5 class="card-title display-6 fw-bolder">Electrolux EcoLine entdecken</h5>
+                  <p class="card-text">Unsere effizientesten Produkte - ressourcenschonend und leistungsstark.</p>
+                  <a href="#" class="d-flex align-items-center justify-content-center">Weiterlesen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- highlights end -->
+
+
+        <!-- For healthier and fresh air Start -->
+        <section class="healthy-air-sec">
+          <div class="row">
+            <div class="col-xxl-6">
+              <img src="./assets/images/pure-a9-1440x810.avif">
+            </div>
+            <div class="col-xxl-6 d-flex flex-nowrap justify-content-center flex-column content-spacing card-body">
+              <h5 class="card-title display-6 fw-bold">For healthier and fresh air </h5>
+              <p class="mb-3">The Pure A9 air purifier with the latest filtration technology ensures healthier and fresher air in your home.</p>
+              <a href="#" class="health-air-btn">Weiterlesen</a>
+            </div>
+          </div>
+        </section>
+        <!-- For healthier and fresh air End -->
+        <!-- household appliance start  -->
+        <section class="hightlights-wrap">
+          <h2 class="highlights-title">Your household appliances will have a long life</h2>
+          <div class="row">
+            <div class="col-md-12 overflow-hidden">
+              <div class="card bg-dark text-white img-transition">
+               <img src="./assets/images/technikerin-und-kunde_2880x1200.avif" class="card-img" alt="...">
+                <div class="card-img-overlay d-flex justify-content-end align-items-center flex-nowrap flex-column">
+                  <h5 class="card-title display-6 fw-bold">Wir sind mit unseren Rundum Sorglos Services</h5>
+                  <p class="card-text">Besuchen Sie unseren Support Hub für Unterstützung</p>
+                  <a href="#" class="d-flex align-items-center justify-content-center">Support-Bereich besuchen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- household appliance End  -->
+        <!-- Gallery 2 Start -->
+        <section> 
+          <div class="product-category">
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/dame-am-handy_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/comboflex_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/service_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/dieturzumehr_918x600.avif"><span>Kochen</span></div>
+            </a>
+            <a class="category" href="#">
+              <div style="height: 236px;" class="overflow-hidden"><img class="gallery-image" src="./assets/images/vater-tochter-geschirrspuler_918x600.avif"><span>Kochen</span></div>
+            </a>
+          </div>
+        </section>
+        <!-- Gallery2 End -->
+         <!-- Footer start -->
+        <footer style="background-color: var(--blue);">
+          <div class="footer-wrapper">
+            <div class="d-flex justify-content-between align-items-center pt-4 pb-4">
+              <img src="./assets/images/electrolux-logo-light.svg">
+              <img src="./assets/images/top-arrow.png">
+            </div>
+            <div class="row pt-4 pb-4">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul>
+                      <li><a href="#" class="footer-sub-title">Kontakt & Service</a></li>
+                      <li><a href="#">Kontaktübersicht</a></li>
+                      <li><a href="#">Serviceübersicht</a></li>
+                      <li><a href="#">Hilfeartikel</a></li>
+                      <li><a href="#">Reparaturservice</a></li>
+                      <li><a href="#">Garantieverlängerung</a></li>
+                      <li><a href="#">Installationsservice</a></li>
+                      <li><a href="#">Pflegeservice</a></li>
+                      <li><a href="#">Mieterwechselservice</a></li>
+                      <li><a href="#">Ersatzteile & Zubehör Shop</a></li>
+                      <li><a href="#">Produkt- und Anwendungsberatung</a></li>
+                      <li><a href="#">Produktregistrierung</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li><a href="#" class="footer-sub-title">Kontakt & Service</a></li>
+                      <li><a href="#">Kontaktübersicht</a></li>
+                      <li><a href="#">Serviceübersicht</a></li>
+                      <li><a href="#">Hilfeartikel</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li><a href="#" class="footer-sub-title">Serviceübersicht</a></li>
+                      <li><a href="#">Hilfeartikel</a></li>
+                      <li><a href="#">Reparaturservice</a></li>
+                      <li><a href="#">Garantieverlängerung</a></li>
+                      <li><a href="#">Installationsservice</a></li>
+                      <li><a href="#">Pflegeservice</a></li>
+                      <li><a href="#">Mieterwechselservice</a></li>
+                      <li><a href="#">Ersatzteile & Zubehör Shop</a></li>
+                      <li><a href="#">Kontaktübersicht</a></li>
+                      <li><a href="#">Serviceübersicht</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="#" class="footer-sub-title">Serviceübersicht</a></li>
+                      <li><a href="#">Hilfeartikel</a></li>
+                      <li><a href="#">Reparaturservice</a></li>
+                      <li><a href="#">Garantieverlängerung</a></li>
+                      <li><a href="#">Installationsservice</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-5 pt-5">
+              <div class="col-md-12">
+                <a href="#" class="footer-bottom-text">Rechtliche Informationen</a>
+                <a href="#" class="footer-bottom-text">Cookie-Hinweis</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script>   
+            function search_script() { 
+                var element = document.getElementById("search-box");
+                if (element.style.display === "block") {
+                    element.style.display = "none";
+                }
+                 else {
+                    element.style.display = "block";
+                }
+            }
+        </script>   
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("main-head");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+          </script>
+          <script>
+            const slides = document.querySelectorAll('.slide');
+
+            function slideShow(){
+                // get current slide
+                const current = document.querySelector('.active')
+                //remove active class
+                current.classList.remove('active');
+                // if there is a nextElementSibling:
+                if(current.nextElementSibling){
+                    //add active to next slide
+                    current.nextElementSibling.classList.add('active')
+                } else {
+                    // add active to first one
+                    slides[0].classList.add('active')
+                }
+
+                setTimeout('slideShow()', 4970)
+                // 3000 will make 3s per slide which will match our progress bar
+            }
+            // load the function when the website loads
+            window.onload = slideShow;
+          </script>
+    </body>
+</html>
